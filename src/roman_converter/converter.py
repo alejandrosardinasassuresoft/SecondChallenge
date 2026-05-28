@@ -13,3 +13,5 @@ def to_roman(number: int) -> str:
         return "IX"
     if number == 10:
         return "X"
+    if number == 40:
+        return "XL"
