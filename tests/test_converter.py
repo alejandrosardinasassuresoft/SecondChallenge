@@ -8,3 +8,6 @@ def test_convert_2_to_ii():
 
 def test_convert_3_to_iii():
     assert to_roman(3) == "III"
+
+def test_convert_4_to_iv():
+    assert to_roman(4) == "IV"
