@@ -19,3 +19,5 @@ def to_roman(number: int) -> str:
         return "L"
     if number == 90:
         return "XC"
+    if number == 100:
+        return "C"
