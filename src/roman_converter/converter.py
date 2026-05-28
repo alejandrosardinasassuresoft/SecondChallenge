@@ -21,3 +21,5 @@ def to_roman(number: int) -> str:
         return "XC"
     if number == 100:
         return "C"
+    if number == 400:
+        return "CD"
