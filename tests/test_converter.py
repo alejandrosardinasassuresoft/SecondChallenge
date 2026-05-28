@@ -11,3 +11,6 @@ def test_convert_3_to_iii():
 
 def test_convert_4_to_iv():
     assert to_roman(4) == "IV"
+
+def test_convert_5_to_v():
+    assert to_roman(5) == "V"
