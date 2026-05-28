@@ -44,3 +44,6 @@ def test_convert_900_to_cm():
 
 def test_convert_1000_to_m():
     assert to_roman(1000) == "M"
+
+def test_convert_58_to_lviii():
+    assert to_roman(58) == "LVIII"
