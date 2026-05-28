@@ -17,3 +17,6 @@ def test_convert_5_to_v():
 
 def test_convert_9_to_ix():
     assert to_roman(9) == "IX"
+
+def test_convert_10_to_x():
+    assert to_roman(10) == "X"
