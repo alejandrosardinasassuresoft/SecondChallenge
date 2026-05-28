@@ -26,3 +26,6 @@ def test_convert_40_to_xl():
 
 def test_convert_50_to_l():
     assert to_roman(50) == "L"
+
+def test_convert_90_to_xc():
+    assert to_roman(90) == "XC"
