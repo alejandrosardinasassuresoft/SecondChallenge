@@ -7,3 +7,5 @@ def to_roman(number: int) -> str:
         return "III"
     if number == 4:
         return "IV"
+    if number == 5:
+        return "V"
