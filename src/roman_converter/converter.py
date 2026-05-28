@@ -1,31 +1,25 @@
+ROMAN_MAP = [
+    (1000, "M"),
+    (900, "CM"),
+    (500, "D"),
+    (400, "CD"),
+    (100, "C"),
+    (90, "XC"),
+    (50, "L"),
+    (40, "XL"),
+    (10, "X"),
+    (9, "IX"),
+    (5, "V"),
+    (4, "IV"),
+    (1, "I"),
+]
+
 def to_roman(number: int) -> str:
-    if number == 1:
-        return "I"
-    if number == 2:
-        return "II"
-    if number == 3:
-        return "III"
-    if number == 4:
-        return "IV"
-    if number == 5:
-        return "V"
-    if number == 9:
-        return "IX"
-    if number == 10:
-        return "X"
-    if number == 40:
-        return "XL"
-    if number == 50:
-        return "L"
-    if number == 90:
-        return "XC"
-    if number == 100:
-        return "C"
-    if number == 400:
-        return "CD"
-    if number == 500:
-        return "D"
-    if number == 900:
-        return "CM"
-    if number == 1000:
-        return "M"
+    result = ""
+    
+    for value, symbol in ROMAN_MAP:
+        while number >= value:
+            result += symbol
+            number -= value
+
+    return result
