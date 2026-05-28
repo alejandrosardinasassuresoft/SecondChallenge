@@ -1,2 +1,5 @@
 def to_roman(number: int) -> str:
-    return "I"
+    if number == 1:
+        return "I"
+    if number == 2:
+        return "II"
