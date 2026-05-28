@@ -11,3 +11,5 @@ def to_roman(number: int) -> str:
         return "V"
     if number == 9:
         return "IX"
+    if number == 10:
+        return "X"
