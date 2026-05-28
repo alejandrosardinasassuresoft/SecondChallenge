@@ -20,3 +20,6 @@ def test_convert_9_to_ix():
 
 def test_convert_10_to_x():
     assert to_roman(10) == "X"
+
+def test_convert_40_to_xl():
+    assert to_roman(40) == "XL"
