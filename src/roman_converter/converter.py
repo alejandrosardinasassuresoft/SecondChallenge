@@ -27,3 +27,5 @@ def to_roman(number: int) -> str:
         return "D"
     if number == 900:
         return "CM"
+    if number == 1000:
+        return "M"
