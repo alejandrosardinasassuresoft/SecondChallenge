@@ -5,3 +5,6 @@ def test_convert_1_to_1():
 
 def test_convert_2_to_ii():
     assert to_roman(2) == "II"
+
+def test_convert_3_to_iii():
+    assert to_roman(3) == "III"
