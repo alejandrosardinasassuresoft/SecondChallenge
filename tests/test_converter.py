@@ -96,3 +96,6 @@ def test_convert_m_to_1000():
 
 def test_convert_lviii_to_58():
     assert to_intager("LVIII") == 58
+
+def test_convert_lviii_to_58_minusculs():
+    assert to_intager("lviii") == 58
