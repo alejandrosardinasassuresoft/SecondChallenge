@@ -66,3 +66,6 @@ def test_convert_v_to_5():
 
 def test_convert_ix_to_9():
     assert to_intager("IX") == 9
+
+def test_convert_x_to_10():
+    assert to_intager("X") == 10
