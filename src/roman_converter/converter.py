@@ -23,3 +23,7 @@ def to_roman(number: int) -> str:
             number -= value
 
     return result
+
+def to_intager(roman: str) -> int:
+    if(roman == "I"):
+        return 1
