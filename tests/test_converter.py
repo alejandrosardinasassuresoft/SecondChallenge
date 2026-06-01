@@ -47,3 +47,7 @@ def test_convert_1000_to_m():
 
 def test_convert_58_to_lviii():
     assert to_roman(58) == "LVIII"
+
+# Test for to_intager
+def test_convert_i_to_1():
+    assert to_intager("I") == 1
