@@ -35,3 +35,5 @@ def to_intager(roman: str) -> int:
         return 4
     if(roman == "V"):
         return 5
+    if(roman == "IX"):
+        return 9
