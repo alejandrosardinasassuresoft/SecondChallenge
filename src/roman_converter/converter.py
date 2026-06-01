@@ -43,13 +43,14 @@ def to_roman(number: int) -> str:
 def to_intager(roman: str) -> int:
     result = 0
     index = 0
+    romanNormalized = roman.upper()
 
     for symbol, value in ROMAN_VALUES:
-        while roman[index:index + len(symbol)] == symbol:
+        while romanNormalized[index:index + len(symbol)] == symbol:
             result += value
             index += len(symbol)
 
-            if index >= len(roman):
+            if index >= len(romanNormalized):
                 break
 
     return result
