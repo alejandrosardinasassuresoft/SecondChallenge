@@ -51,3 +51,6 @@ def test_convert_58_to_lviii():
 # Test for to_intager
 def test_convert_i_to_1():
     assert to_intager("I") == 1
+
+def test_convert_ii_to_2():
+    assert to_intager("II") == 2
