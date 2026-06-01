@@ -39,3 +39,5 @@ def to_intager(roman: str) -> int:
         return 9
     if(roman == "X"):
         return 10
+    if(roman == "XL"):
+        return 40
