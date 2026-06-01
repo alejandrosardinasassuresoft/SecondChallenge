@@ -54,3 +54,6 @@ def test_convert_i_to_1():
 
 def test_convert_ii_to_2():
     assert to_intager("II") == 2
+
+def test_convert_iii_to_3():
+    assert to_intager("III") == 3
