@@ -45,3 +45,5 @@ def to_intager(roman: str) -> int:
         return 50
     if(roman == "XC"):
         return 90
+    if(roman == "C"):
+        return 100
