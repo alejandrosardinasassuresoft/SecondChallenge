@@ -60,3 +60,6 @@ def test_convert_iii_to_3():
 
 def test_convert_iv_to_4():
     assert to_intager("IV") == 4
+
+def test_convert_v_to_5():
+    assert to_intager("V") == 5
