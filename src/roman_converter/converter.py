@@ -27,3 +27,5 @@ def to_roman(number: int) -> str:
 def to_intager(roman: str) -> int:
     if(roman == "I"):
         return 1
+    if(roman == "II"):
+        return 2
