@@ -87,3 +87,6 @@ def test_convert_cd_to_400():
 
 def test_convert_d_to_500():
     assert to_intager("D") == 500
+
+def test_convert_cm_to_900():
+    assert to_intager("CM") == 900
