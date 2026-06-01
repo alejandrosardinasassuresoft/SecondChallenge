@@ -78,3 +78,6 @@ def test_convert_l_to_50():
 
 def test_convert_xc_to_90():
     assert to_intager("XC") == 90
+
+def test_convert_c_to_100():
+    assert to_intager("C") == 100
