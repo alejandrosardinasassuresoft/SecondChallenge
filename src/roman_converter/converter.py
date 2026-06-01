@@ -47,3 +47,5 @@ def to_intager(roman: str) -> int:
         return 90
     if(roman == "C"):
         return 100
+    if(roman == "CD"):
+        return 400
