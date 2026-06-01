@@ -31,3 +31,5 @@ def to_intager(roman: str) -> int:
         return 2
     if(roman == "III"):
         return 3
+    if(roman == "IV"):
+        return 4
