@@ -51,3 +51,5 @@ def to_intager(roman: str) -> int:
         return 400
     if(roman == "D"):
         return 500
+    if(roman == "CM"):
+        return 900
