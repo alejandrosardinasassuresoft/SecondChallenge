@@ -90,3 +90,6 @@ def test_convert_d_to_500():
 
 def test_convert_cm_to_900():
     assert to_intager("CM") == 900
+
+def test_convert_m_to_1000():
+    assert to_intager("M") == 1000
