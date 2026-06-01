@@ -72,3 +72,6 @@ def test_convert_x_to_10():
 
 def test_convert_xl_to_40():
     assert to_intager("XL") == 40
+
+def test_convert_l_to_50():
+    assert to_intager("L") == 50
