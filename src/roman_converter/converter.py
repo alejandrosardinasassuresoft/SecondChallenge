@@ -14,6 +14,22 @@ ROMAN_MAP = [
     (1, "I"),
 ]
 
+ROMAN_VALUES = [
+    ("M", 1000),
+    ("CM", 900),
+    ("D", 500),
+    ("CD", 400),
+    ("C", 100),
+    ("XC", 90),
+    ("L", 50),
+    ("XL", 40),
+    ("X", 10),
+    ("IX", 9),
+    ("V", 5),
+    ("IV", 4),
+    ("I", 1),
+]
+
 def to_roman(number: int) -> str:
     result = ""
     
@@ -25,33 +41,15 @@ def to_roman(number: int) -> str:
     return result
 
 def to_intager(roman: str) -> int:
-    if(roman == "I"):
-        return 1
-    if(roman == "II"):
-        return 2
-    if(roman == "III"):
-        return 3
-    if(roman == "IV"):
-        return 4
-    if(roman == "V"):
-        return 5
-    if(roman == "IX"):
-        return 9
-    if(roman == "X"):
-        return 10
-    if(roman == "XL"):
-        return 40
-    if(roman == "L"):
-        return 50
-    if(roman == "XC"):
-        return 90
-    if(roman == "C"):
-        return 100
-    if(roman == "CD"):
-        return 400
-    if(roman == "D"):
-        return 500
-    if(roman == "CM"):
-        return 900
-    if(roman == "M"):
-        return 1000
+    result = 0
+    index = 0
+
+    for symbol, value in ROMAN_VALUES:
+        while roman[index:index + len(symbol)] == symbol:
+            result += value
+            index += len(symbol)
+
+            if index >= len(roman):
+                break
+
+    return result
